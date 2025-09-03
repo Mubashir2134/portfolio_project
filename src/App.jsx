@@ -13,8 +13,8 @@ function App() {
   return (
     <>
       <Nav />
-      <Header />
-      <section id="service" />
+       <Header />
+      {/*<section id="service" />
       <MyServices />
       <section id="skills" />
       <SpecialSkills />
@@ -22,7 +22,7 @@ function App() {
       <ProjectSec />
       <section className="contact" />
       <ContactSec />
-      <Footer />
+      <Footer /> */}
     </>
   );
 }

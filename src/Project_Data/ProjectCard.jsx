@@ -11,7 +11,7 @@ export const ProjectCard = [
     id: 2,
     imgUrl: "Images/Ecommerce-Pic.png",
     ProjectName: "Ecommerce Website",
-    url: "https://bwkczrxk-3000.inc1.devtunnels.ms/",
+    url: "https://e-commerce-ten-zeta-36.vercel.app/",
   },
     {
     id:3,

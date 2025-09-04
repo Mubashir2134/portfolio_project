@@ -33,7 +33,7 @@ function Header() {
               creativity with clean code. Always curious and driven, I thrive on
               solving challenges and turning ideas into reality.
             </p>
-            <div className="pt-[80px] max-[500px]:pt-[30px]">
+            <div className="py-[80px] max-[500px]:py-[30px]">
               <a
                 className="flex items-center w-[140px] h-[50px] max-[360px]:w-[140px] max-[360px]:h-[40px] border-2 border-white rounded-[7px] justify-between p-2  hover:bg-[#858792] transition duration-300 cursor-pointer z-50   "
                 href="./Resume.pdf"

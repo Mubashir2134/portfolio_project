@@ -51,10 +51,10 @@ function Header() {
               src="Images/my Img.png"
               alt="Portfolio Img"
             />
-
+            
             <svg
               id="lines"
-              className="absolute z-1 top-[-7px] right-[0px] max-[500px]:w-[700px] max-[500px]:h-[700px] max-[500px]:top-[-15px] max-[500px]:right-[0px] "
+              className="absolute z-0 top-[-7px] right-[0px] max-[500px]:w-[700px] max-[500px]:h-[700px] max-[500px]:top-[-15px] max-[500px]:right-[0px] "
               viewBox="0 0 550 550"
             >
               <path

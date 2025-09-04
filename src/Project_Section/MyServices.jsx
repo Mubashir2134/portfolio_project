@@ -128,222 +128,14 @@
 // }
 // export default MyServices;
 
-// import { CardData } from "./MyServiceCard";
-// import { useEffect, useState } from "react";
 
-// function MyServices() {
-//   const [current, setCurrent] = useState(0);
-//   const [cardsPerView, setcardsPreView] = useState(2);
-
-//   useEffect(() => {
-//     const updateCardsPerView = () => {
-//       if (window.innerWidth <= 768) {
-//         setcardsPreView(1);
-//       } else {
-//         setcardsPreView(2);
-//       }
-//     };
-//     updateCardsPerView();
-//     window.addEventListener("resize", updateCardsPerView);
-//     return () => window.removeEventListener("resize", updateCardsPerView);
-//   }, []);
-
-//   return (
-//     <>
-//       <div className="w-full bg-[#2a2c39]">
-//         <div className="w-full gap-[60px] py-[50px] md:py-[100px] px-4 md:px-8 lg:px-[200px] flex flex-col items-center justify-center">
-//           <h1 className="text-2xl md:text-4xl lg:text-[50px] text-white font-semibold text-center">
-//             Service Provide For My Clients
-//           </h1>
-
-//           <div className="relative w-full overflow-hidden z-10">
-//             <div
-//               className={` flex  gap-7 items-center md:gap-[80px] transition-transform ease-out duration-500`}
-//               style={{
-//                 transform: `translateX(-${
-//                   current * (cardsPerView === 1 ? 100 : 50)
-//                 }%)`,
-//               }}
-//             >
-//               {CardData.map((skills) => (
-//                 <div
-//                   key={skills.id}
-//                   className="flex-shrink-0 w-full md:w-[330px] h-[450px]  bg-[#22242e] px-4 md:px-[40px] py-4 md:py-[30px] mx-auto md:mx-0"
-//                   style={{
-//                     maxWidth: cardsPerView === 1 ? '300px' : '310px'
-//                   }}
-//                 >
-//                   <img
-//                     className="w-20 md:w-[120px]"
-//                     src={skills.imgUrl}
-//                     alt={skills.heading}
-//                   />
-//                   <div className="flex flex-col gap-4 mt-6 text-[#858792]">
-//                     <h2 className="text-xl md:text-2xl lg:text-3xl font-[500] text-white">
-//                       {skills.heading}
-//                     </h2>
-//                     <div className="flex flex-col gap-2">
-//                       <p className="flex items-center gap-2">
-//                         {skills.icon}
-//                         {skills.skill1}
-//                       </p>
-//                       <p className="flex items-center gap-2">
-//                         {skills.icon}
-//                         {skills.skill2}
-//                       </p>
-//                       <p className="flex items-center gap-2">
-//                         {skills.icon}
-//                         {skills.skill3}
-//                       </p>
-//                       <p className="flex items-center gap-2">
-//                         {skills.icon}
-//                         {skills.skill4}
-//                       </p>
-//                       <p className="flex items-center gap-2">
-//                         {skills.icon}
-//                         {skills.skill5}
-//                       </p>
-//                     </div>
-//                   </div>
-//                 </div>
-//               ))}
-//             </div>
-//           </div>
-
-//           <div className="flex justify-center items-center">
-//             <div className="flex items-center justify-center gap-2">
-//               {Array.from({ length: 3 }).map((item, index) => {
-//                 return (
-//                   <button
-//                     key={index}
-//                     onClick={() => setCurrent(index)}
-//                     className={`w-3 h-3 rounded-full cursor-pointer transition-colors duration-300 ${
-//                       current === index ? "bg-white" : "bg-gray-500"
-//                     }`}
-//                   />
-//                 );
-//               })}
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-//     </>
-//   );
-// }
-
-// export default MyServices;
-
-// import { CardData } from "./MyServiceCard";
-// import { useEffect, useState } from "react";
-
-// function MyServices() {
-//   const [current, setCurrent] = useState(0);
-//   const [cardsPerView, setcardsPreView] = useState(2);
-
-//   useEffect(() => {
-//     const updateCardsPerView = () => {
-//       if (window.innerWidth <= 768) {
-//         setcardsPreView(1);
-//       } else {
-//         setcardsPreView(2);
-//       }
-//     };
-//     updateCardsPerView();
-//     window.addEventListener("resize", updateCardsPerView);
-//     return () => window.removeEventListener("resize", updateCardsPerView);
-//   }, []);
-
-//   return (
-//     <>
-//       <div className="w-full bg-[#2a2c39]">
-//         <div className="w-full gap-[60px] py-[50px] md:py-[100px] px-4 md:px-8 lg:px-[200px] flex flex-col items-center justify-center ">
-//           <h1 className="text-2xl md:text-4xl lg:text-[50px] text-white font-semibold text-center">
-//             Service Provide For My Clients
-//           </h1>
-
-//           <div className="relative w-full overflow-hidden">
-//             <div
-//               className={`flex items-center gap-4 md:gap-[80px] transition-transform ease-out duration-500`}
-//               style={{
-//                 transform: `translateX(-${
-//                   current * (cardsPerView === 1 ? 100 : 50)
-//                 }%)`,
-//               }}
-//             >
-//               {CardData.map((skills) => (
-//                 <div
-//                   key={skills.id}
-//                   className="flex-shrink-0 w-full md:w-[310px] h-[450px] bg-[#22242e] px-4 md:px-[30px] py-4 md:py-[30px] mx-auto md:mx-0"
-//                   style={{
-//                     maxWidth: cardsPerView === 1 ? '300px' : '310px'
-//                   }}
-//                 >
-//                   <img
-//                     className="w-20 md:w-[120px]"
-//                     src={skills.imgUrl}
-//                     alt={skills.heading}
-//                   />
-//                   <div className="flex flex-col gap-4 mt-6 text-[#858792]">
-//                     <h2 className="text-xl md:text-2xl lg:text-3xl font-[500] text-white">
-//                       {skills.heading}
-//                     </h2>
-//                     <div className="flex flex-col gap-2">
-//                       <p className="flex items-center gap-2">
-//                         {skills.icon}
-//                         {skills.skill1}
-//                       </p>
-//                       <p className="flex items-center gap-2">
-//                         {skills.icon}
-//                         {skills.skill2}
-//                       </p>
-//                       <p className="flex items-center gap-2">
-//                         {skills.icon}
-//                         {skills.skill3}
-//                       </p>
-//                       <p className="flex items-center gap-2">
-//                         {skills.icon}
-//                         {skills.skill4}
-//                       </p>
-//                       <p className="flex items-center gap-2">
-//                         {skills.icon}
-//                         {skills.skill5}
-//                       </p>
-//                     </div>
-//                   </div>
-//                 </div>
-//               ))}
-//             </div>
-//           </div>
-
-//           <div className="flex justify-center items-center">
-//             <div className="flex items-center justify-center gap-2">
-//               {Array.from({ length: 3 }).map((item, index) => {
-//                 return (
-//                   <button
-//                     key={index}
-//                     onClick={() => setCurrent(index)}
-//                     className={`w-3 h-3 rounded-full cursor-pointer transition-colors duration-300 ${
-//                       current === index ? "bg-white" : "bg-gray-500"
-//                     }`}
-//                   />
-//                 );
-//               })}
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-//     </>
-//   );
-// }
-
-// export default MyServices;
-
+  
 import { CardData } from "../Project_Data/MyServiceCard";
 import { useEffect, useState } from "react";
 
 function MyServices() {
   const [current, setCurrent] = useState(0);
-  const [cardsPerView, setCardsPerView] = useState(2);
+  const [cardsPerView, setCardsPerView] = useState(3);
 
   useEffect(() => {
     const updateCardsPerView = () => {
@@ -358,47 +150,38 @@ function MyServices() {
     return () => window.removeEventListener("resize", updateCardsPerView);
   }, []);
 
-  // Only show the visible card(s)
-  const visibleCards = CardData.slice(current, current + cardsPerView);
+  // Card width and gap must match your CSS
+  const cardWidth = cardsPerView === 1 ? 300 : 310;
+  const gap = cardsPerView === 1 ? 60 : 80;
+  const offset = current * (cardWidth + gap);
 
   return (
     <>
       <div className="w-full bg-[#2a2c39]">
-        <div
-          className={`w-full py-[50px] md:py-[100px] ${
-            cardsPerView === 1 ? "px-0" : "px-8 lg:px-[200px]"
-          } flex flex-col items-center justify-center gap-[60px]`}
-        >
-          <h1
-            className={`text-2xl md:text-4xl lg:text-[50px] text-white font-semibold text-center`}
-          >
+        <div className={`w-full py-[50px] md:py-[100px] ${cardsPerView === 1 ? "px-5" : "px-8 lg:px-[200px]"} flex flex-col items-center justify-center gap-[60px]`}>
+          <h1 className="text-2xl md:text-4xl lg:text-[50px] text-white font-semibold text-center">
             Service Provide For My Clients
           </h1>
 
-          <div className="relative w-full flex justify-center overflow-hidden">
+          <div className="relative w-full overflow-hidden">
             <div
-              className={`flex ${
-                cardsPerView === 1 ? "gap-0" : "gap-4 md:gap-[80px]"
-              } transition-transform ease-out duration-500`}
+              className={`flex items-center gap-[${gap}px] transition-transform ease-out duration-500`}
+              style={{
+                transform: `translateX(-${offset}px)`,
+              }}
             >
-              {visibleCards.map((skills) => (
+              {CardData.map((skills) => (
                 <div
                   key={skills.id}
-                  className={`flex-shrink-0 bg-[#22242e] ${
-                    cardsPerView === 1
-                      ? " w-[300px] h-[400px] px-5 py-5"
-                      : "md:w-[450px] h-[450px] px-4 md:px-[30px] py-4 md:py-[30px] mx-auto md:mx-0"
-                  }`}
+                  className={`flex-shrink-0 bg-[#22242e] ${cardsPerView === 1 ? "w-[300px] h-[400px] px-5 py-5" : "md:w-[310px] h-[450px] px-4 md:px-[30px] py-4 md:py-[30px] mx-auto md:mx-0"}`}
                 >
                   <img
-                    className={`w-20 md:w-[120px] `}
+                    className="w-20 md:w-[120px]"
                     src={skills.imgUrl}
                     alt={skills.heading}
                   />
                   <div className="flex flex-col gap-4 mt-6 text-[#858792]">
-                    <h2
-                      className={`text-xl md:text-2xl lg:text-3xl font-[500] text-white`}
-                    >
+                    <h2 className="text-xl md:text-2xl lg:text-3xl font-[500] text-white">
                       {skills.heading}
                     </h2>
                     <div className="flex flex-col gap-2">
@@ -431,11 +214,11 @@ function MyServices() {
 
           <div className="flex justify-center items-center mt-4">
             <div className="flex items-center justify-center gap-2">
-              {CardData.slice(0, 3).map((_, index) => (
+              {Array.from({ length: 3 }).map((_, index) => (
                 <button
                   key={index}
                   onClick={() => setCurrent(index)}
-                  className={`w-3 h-3 rounded-full cursor-pointer transition-colors duration-300 ${
+                  className={`w-3 h-3 rounded-full cursor-pointer transition-colors duration-300 z-10 ${
                     current === index ? "bg-white" : "bg-gray-500"
                   }`}
                 />

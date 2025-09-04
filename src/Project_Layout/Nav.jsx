@@ -153,7 +153,7 @@ function Nav() {
       {/* NAVBAR DESKTOP + MOBILE */}
       {/* <nav className="w-full h-[60px] bg-[#2a2c39] flex justify-between items-center px-[200px] max-[720px]:px-[100px] max-[450px]:px-[20px] fixed top-0 z-10"> */}
       <nav className="w-full h-[60px] bg-[#2a2c39] flex justify-between items-center 
-  px-8 sm:px-12 md:px-20 lg:px-32 xl:px-48 fixed top-0 z-10">
+  px-8 sm:px-12 md:px-20 lg:px-32 xl:px-48 fixed top-0 z-50">
         {/* Logo */}
         <img
           className="w-[120px] sm:w-[100px] h-auto"

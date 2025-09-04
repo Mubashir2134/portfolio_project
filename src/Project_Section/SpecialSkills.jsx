@@ -87,7 +87,7 @@ const SpecialSkills = () => {
   }, []);
 
   return (
-    <div className="flex flex-col lg:flex-row  items-center w-full min-h-auto px-5 sm:px-10 md:px-20 lg:px-[200px] bg-[#252734] gap-8 lg:gap-[30px] py-10 lg:py-0">
+    <div className="flex flex-col lg:flex-row  items-center w-full h-auto px-5 sm:px-10 md:px-20 lg:px-[200px] bg-[#252734] gap-8 lg:gap-[30px] py-10 lg:py-25 ">
       <div className="w-full lg:w-1/2 text-2xl sm:text-3xl md:text-4xl lg:text-[50px] text-center lg:text-left text-white font-semibold">
         My Special Skills Field Here.
       </div>
